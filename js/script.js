@@ -14,30 +14,6 @@ $(document).ready(function () {
         variableWidth: true,
         asNavFor:".section-clients-slider-down",
         arrows: false, 
-        // slidesToScroll: 1,
-        // easing: '_linear_',
-        // initialSlide: 0,
-        // autoplay: false,
-        // autoplaySpeed: 3000,
-        // pauseOnFocus: true,
-        // pauseOnHover: true,
-        // pauseOnDotsHover: true,
-        // draggable: false,
-        // swipe: true,
-        // touchThreshold: 5,
-        // touchMove: true,
-        // waitForAnimate: true,
-        // rows: 1,
-        // slidesPerRow: 5,
-        // initialSlide: 3,
-        // responsive:[
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             slidesToShow: 3,
-        //         }
-        //     }
-        // ],
     });
 });
 
@@ -51,30 +27,6 @@ $(document).ready(function () {
         variableWidth: true,
         asNavFor:".section-clients-slider-top",
         arrows: true, 
-        // slidesToScroll: 1,
-        // easing: '_linear_',
-        // initialSlide: 0,
-        // autoplay: false,
-        // autoplaySpeed: 3000,
-        // pauseOnFocus: true,
-        // pauseOnHover: true,
-        // pauseOnDotsHover: true,
-        // draggable: false,
-        // swipe: true,
-        // touchThreshold: 5,
-        // touchMove: true,
-        // waitForAnimate: true,
-        // rows: 1,
-        // slidesPerRow: 5,
-        // initialSlide: 3,
-        // responsive:[
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             slidesToShow: 3,
-        //         }
-        //     }
-        // ],
     });
 });
 
