@@ -4,15 +4,6 @@ $(document).ready(function () {
     });
 });
 
-
-// document.querySelector('.menu-mobile').onclick = function() {
-//     document.querySelector('.nav-main').classList.toggle('active');
-// };
-    
-// document.querySelector('.close-button').onclick = function() {
-//     document.querySelector('.nav-main').classList.remove('active');
-// };
-
 $(document).ready(function () {
     $('.section-clients-slider-top').slick({
         dots: false,
