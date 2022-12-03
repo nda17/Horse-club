@@ -14,7 +14,7 @@ document.querySelector('.menu-mobile').onclick = function() {
 //   document.querySelector('.nav-main-list').classList.toggle('active');
 
 document.querySelector('.close-button').onclick = function() {
-    document.querySelector('.nav-main').classList.toggle('active');
+    document.querySelector('.nav-main').classList.remove('active');
 };
 
 
