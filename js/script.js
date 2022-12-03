@@ -1,17 +1,17 @@
-// $(document).ready(function () {
-//     $('.nav, .close-button').click(function (event) {
-//         $('.nav, .nav-main, .nav-main-list').toggleClass('active');
-//     });
-// });
+$(document).ready(function () {
+    $('.menu-mobile, .close-button').click(function (event) {
+        $('.nav-main').toggleClass('active');
+    });
+});
 
 
-document.querySelector('.menu-mobile').onclick = function() {
-    document.querySelector('.nav-main').classList.toggle('active');
-};
+// document.querySelector('.menu-mobile').onclick = function() {
+//     document.querySelector('.nav-main').classList.toggle('active');
+// };
     
-document.querySelector('.close-button').onclick = function() {
-    document.querySelector('.nav-main').classList.remove('active');
-};
+// document.querySelector('.close-button').onclick = function() {
+//     document.querySelector('.nav-main').classList.remove('active');
+// };
 
 $(document).ready(function () {
     $('.section-clients-slider-top').slick({
