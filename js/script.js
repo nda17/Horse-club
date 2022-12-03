@@ -1,8 +1,19 @@
-$(document).ready(function () {
-    $('.nav, .close-button').click(function (event) {
-        $('.nav, .nav-main, .nav-main-list').toggleClass('active');
-    });
-});
+// $(document).ready(function () {
+//     $('.nav, .close-button').click(function (event) {
+//         $('.nav, .nav-main, .nav-main-list').toggleClass('active');
+//     });
+// });
+
+
+document.querySelector('.menu-mobile').onclick = function() {
+    document.querySelector('.nav-main').classList.toggle('active');
+};
+    
+//   document.querySelector('.nav').classList.toggle('active');
+  
+//   document.querySelector('.nav-main-list').classList.toggle('active');
+
+
 
 $(document).ready(function () {
     $('.section-clients-slider-top').slick({
