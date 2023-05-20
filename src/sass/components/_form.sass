@@ -1,0 +1,200 @@
+// Форма отвечаем на вопросы
+.form-wrapper
+    width: 100%
+    height: 800px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    @include respond(tablet-portrait)
+        justify-content: center
+
+    @include respond(mobile-landscape)
+        justify-content: center
+
+    @include respond(mobile-portrait)
+        justify-content: center
+
+
+.form-questions
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 470px
+    height: 547px
+    background: $color-white
+    border: 1px solid #EAEAEA
+    border-radius: 5px
+    box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.11)
+    position: relative
+    @include respond(tablet-landscape)
+        max-width: 450px
+    @include respond(tablet-portrait)
+        max-width: 450px
+    @include respond(mobile-landscape)
+        max-width: 400px
+    @include respond(mobile-portrait)
+        max-width: 300px
+    &__title
+        padding: 12% 13% 0% 13%
+        font-family: 'Philosopher'
+        font-weight: 400
+        font-size: calc(17px + 13 * ((100vw - 320px) / (1920 - 320)))
+        line-height: 35px
+        text-align: center
+        color: $color-title
+        margin: 0px 0px 15px 0px
+    &__subtitle
+        font-size: calc(13px + 2 * ((100vw - 320px) / (1920 - 320)))
+        text-align: center
+        color: $color-title
+        padding: 0px 50px 0px 50px
+        margin: 0px 0px 30px 0px
+    &__subtitle-option
+        font-weight: 800
+    &__name
+        width: 90% 
+        padding: 20px 143px 20px 25px
+        box-sizing: border-box
+        background: $color-white
+        border: 3px solid $color-subtitle
+        border-radius: 5px
+        text-decoration: none
+        outline: none
+        margin: 0px 0px 25px 0px
+        &:focus:valid
+            color: $color-title
+            border-bottom: 3px solid #66D763
+        &:focus:invalid
+            border-bottom: 3px solid $color-orange
+    &__name:placeholder-shown + .label-text 
+        opacity: 0
+        visibility: hidden
+        transform: translateY(30px)
+        transition: .5s all
+    &__phone
+        width: 90%
+        padding: 20px 143px 20px 25px
+        box-sizing: border-box
+        background: $color-white
+        border: 3px solid $color-subtitle
+        border-radius: 5px
+        text-decoration: none
+        outline: none
+        margin: 0px 0px 21px 0px
+        &:focus:valid
+            color: $color-title
+            border-bottom: 3px solid #66D763
+        &:focus:invalid
+            border-bottom: 3px solid $color-orange
+    &__phone:placeholder-shown + .label-number 
+        opacity: 0
+        visibility: hidden
+        transform: translateY(30px)
+        transition: .5s all
+
+.label-text
+    font-family: 'Roboto'
+    font-size: 10px
+    line-height: 10px
+    color: $color-orange
+    position: absolute
+    content: ""
+    top: 188px
+    left: 70px
+    transition: .4s all
+
+.label-number
+    font-family: 'Roboto'
+    font-size: 10px
+    line-height: 10px
+    color: $color-orange
+    position: absolute
+    content: ""
+    top: 274px
+    left: 70px
+    transition: .4s all
+
+// Кнопка записаться
+.button-form
+    width: 90%
+    margin: 0px 0px 31px 0px
+
+// Инпут чекбокс
+.checkbox-block
+    display: flex
+    padding: 0px 0px 27px 0px
+    position: relative
+    @include respond(mobile-portrait)
+        width: 90%
+        justify-content: flex-end
+    &__text
+        color: $color-subtitle
+        @include respond(mobile-portrait)
+            font-size: 13.4px
+    &__text-option
+        color: $color-subtitle
+        font-weight: 600
+
+.checkbox-default
+    position: absolute
+    z-index: -1
+    opacity: 0
+    cursor: pointer
+
+.checkbox-custom
+    width: 16px
+    height: 16px
+    border: 2px solid $color-orange
+    border-radius: 2px
+    content: ""
+    position: absolute
+    top: 1px
+    left: -27px
+    @include respond(mobile-portrait)
+        left: 0px
+    &::before
+        content: ""
+        position: absolute
+        top: 1.5px
+        left: 1.5px
+        background: url(../icons/svg/arrow-checkbox.svg) no-repeat
+        width: 14px
+        height: 12px
+        opacity: 0
+        transition: .2s all
+    &::after
+        width: 107px
+        transform: translateY(25px)
+        content: "Подтвердите согласие"
+        font-size: 10px
+        line-height: 10px
+        display: flex
+        align-items: center
+        color: #FF5C00
+        transition: .4s all
+
+.checkbox-default:checked + .checkbox-custom::before
+        opacity: 1
+
+.checkbox-default:checked + .checkbox-custom
+        border: 2px solid #FFC700
+
+.checkbox-default:checked + .checkbox-custom::after
+        opacity: 0
+        visibility: hidden
+        transform: translateY(-1px)
+        transition: .4s all
+
+.form-decor-image
+    background: url(../img/section-form-questions/bush.svg) no-repeat
+    width: 297px
+    height: 371px
+    position: absolute
+    bottom: -157px
+    right: -161px
+    @include respond(tablet-portrait)
+        display: none
+    @include respond(mobile-landscape)
+        display: none
+    @include respond(mobile-portrait)
+        display: none

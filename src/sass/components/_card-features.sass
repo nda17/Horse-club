@@ -1,0 +1,28 @@
+.features-card
+    display: flex
+    flex-direction: column
+    width: 22%
+    min-height: 237px 
+    @include respond(mobile-landscape)
+        width: 45%
+        margin-bottom: 40px
+    @include respond(mobile-portrait)
+        width: 85%
+        margin-bottom: 45px
+    &__image
+        width: 50%
+        height: 45%
+        margin: 0 auto
+    &__title
+        font-family: "Roboto"
+        font-weight: 500
+        font-size: calc(14px + 5 * ((100vw - 320px) / (1920 - 320)))
+        line-height: 51px
+        text-align: center
+        color: $color-black
+    &__text
+        font-family: "Roboto"
+        font-weight: 400
+        font-size: calc(13px + 2 * ((100vw - 320px) / (1920 - 320)))
+        line-height: 23px
+        text-align: center

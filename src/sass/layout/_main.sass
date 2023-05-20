@@ -1,0 +1,18 @@
+.main
+    flex: 1 1 auto
+    &__main-block
+        padding-top: 5px
+        background: #FFF url(../img/background-image/header-background-desktop.jpg) center/cover no-repeat
+        height: 948px
+        @include respond(tablet-landscape)
+            background: #FFF url(../img/background-image/header-background-tab-land.jpg) center/cover no-repeat
+            height: 693px
+        @include respond(tablet-portrait)
+            background: #FFF url(../img/background-image/header-background-tab-port.jpg) center/cover no-repeat
+            height: 539px   
+        @include respond(mobile-landscape)
+            background: #FFF url(../img/background-image/header-background-mobile-land.jpg) bottom/cover no-repeat 
+            height: 564px  
+        @include respond(mobile-portrait)
+            background: #FFF url(../img/background-image/header-background-mobile-port.jpg) bottom/cover no-repeat 
+            height: 740px  

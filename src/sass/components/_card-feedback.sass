@@ -1,0 +1,75 @@
+.card-feedback
+    max-width: 570px
+    height: 291px
+    border: 1px solid #EAEAEA
+    box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.11)
+    border-radius: 5px
+    @include respond(mobile-landscape)
+        max-width: 354px
+        height: 336px
+    @include respond(mobile-portrait)
+        max-width: 300px
+        height: 379px
+    &__wrapper
+        padding: 40px 45px 35px 45px
+        box-sizing: border-box
+        @include respond(mobile-landscape)
+            padding: 40px 15px 35px 15px
+        @include respond(mobile-portrait)
+            padding: 40px 15px 35px 15px
+    &__text
+        max-width: 480px
+        font-size: calc(13px + 2 * ((100vw - 320px) / (1920 - 320)))
+        line-height: 24px
+        color: $color-title
+        margin: 0px 0px 15px 0px
+    &__button-more
+        max-width: 135px
+        height: 35px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: calc(13px + 2 * ((100vw - 320px) / (1920 - 320)))
+        line-height: 21px
+        text-align: center
+        color: $color-green
+        margin: 0px auto 48px auto
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06)
+        transition: .1s all
+        &:hover
+            scale: 1.02
+            color: #ff0000
+
+.author
+    display: flex
+    justify-content: space-between
+    &__info
+        display: flex
+    &__info-photo
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        margin: 0px 20px 0px 0px
+    &__info-about
+        display: flex
+        flex-direction: column
+    &__info-name
+        margin: 0px 0px 10px 0px
+    &__info-socials
+        display: flex
+        margin-right: 10px
+        &:last-child
+            margin-right: 0px
+    &__info-socials-image
+        transition: .3s all
+        &:hover
+            scale: 1.1
+    &__decoration
+        width: 45px
+        height: 37px
+        background: url(../icons/svg/comma-icon-feedback.svg) no-repeat
+        transition: .5s all
+        &:hover
+            scale: 1.1
+
+
