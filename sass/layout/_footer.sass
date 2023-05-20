@@ -1,0 +1,124 @@
+.section-footer
+    width: 100%
+    background: $color-black
+    position: relative
+
+.footer-up-block
+    display: flex
+    align-items: center
+    padding: 45px 0px 38px 0px
+    justify-content: space-between
+    @include respond(mobile-landscape)
+        flex-direction: column
+    @include respond(mobile-landscape)
+        padding: 45px 0px 28px 0px
+    @include respond(mobile-portrait)
+        padding: 45px 0px 28px 0px
+
+.btn-call-back
+    font-size: calc(13px + 2 * ((100vw - 320px) / (1920 - 320)))
+    padding: 14px 41px
+    border: 2px solid $color-yellow
+    color: $color-white
+    background: $color-black
+    border-radius: 8px
+    cursor: pointer
+    &:hover
+        border: 2px solid $color-green
+    &:active
+        background: $color-very-grey
+        scale: 0.95
+        transition: .1s all
+
+.footer-container
+    max-width: 1200px
+    display: flex
+    min-height: 60px
+    justify-content: space-between
+    margin: 0 auto
+    padding: 0px 16px 0px 16px
+        
+.logo-foooter
+    width: 152px
+    height: 49px
+
+.nav-footer
+    display: flex
+    align-items: center
+    padding: 20px 0px 0px 0px
+    @include respond(mobile-landscape)
+        flex-direction: column
+    @include respond(mobile-portrait)
+        flex-direction: column
+.nav-list-footer
+    display: flex
+    margin: 0px 48px 0px 0px
+    @include respond(tablet-portrait)
+        margin-right: 15px
+    @include respond(mobile-landscape)
+        margin: 0px 0px 28px 0px
+    @include respond(mobile-portrait)
+        margin: 0px 0px 28px 0px
+        flex-direction: column
+        align-items: center
+    &__link-footer
+        margin-right: 44px
+        transition: .4s all
+        @include respond(tablet-portrait)
+            margin-right: 25px
+        @include respond(mobile-landscape)
+            margin-right: 44px
+        @include respond(mobile-portrait)
+            margin-right: 0px
+        &:last-child
+            margin: 0px
+        &:hover
+            scale: 1.05
+    &__link-item-footer
+        font-size: 13px
+        text-decoration: none
+        color: $color-white
+        &:hover
+            color: $color-green
+        &:active
+            color: $color-orange
+
+.footer-down-block
+    padding: 0px 0px 25px 0px
+    @include respond(mobile-landscape)
+        padding: 0px 0px 45px 0px
+    @include respond(mobile-portrait)
+        padding: 0px 0px 45px 0px
+    &__agreement
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 13px
+        line-height: 15px
+        text-decoration-line: underline
+        color: #7D808A
+        margin-right: 40px
+        @include respond(mobile-landscape)
+            margin: 0px 0px 13px 0px
+        @include respond(mobile-portrait)
+            margin: 0px 0px 13px 0px
+        &:hover
+            color: $color-white
+    &__politics
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 13px
+        line-height: 15px
+        text-decoration-line: underline
+        color: #7D808A
+        &:hover
+            color: $color-white
+    @include respond(mobile-landscape)
+            display: flex
+            justify-content: space-around
+            flex-direction: column
+            align-items: center
+    @include respond(mobile-portrait)
+            display: flex
+            justify-content: space-around
+            flex-direction: column
+            align-items: center

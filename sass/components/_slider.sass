@@ -1,0 +1,190 @@
+
+.slick-list 
+  overflow: hidden
+
+.slick-track
+  display: flex
+
+.slick-slide
+  padding: 0px 5px
+
+.section-clients-slider-down .section-horse-slider
+  position: relative
+  
+.section-clients-slider-down .slick-arrow
+  position: absolute
+  top: 93.5%
+  z-index: 10
+  font-size: 0
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background: linear-gradient(180deg, #FFF383 0%, #FFC700 100%)
+  border: none
+  &:hover
+      background: linear-gradient(180deg, #FFE456 0%, #FFB800 100%)   
+      cursor: pointer
+  &:active
+      background: linear-gradient(180deg, #FFB800 0%, #FFE456 100%)
+
+.section-clients-slider-down .slick-arrow.slick-prev
+  left: 30%
+  @include respond(mobile-portrait)
+    left: 18%
+  &::before
+    content: ""
+    position: absolute
+    width: 9px
+    height: 15px
+    top: 15px
+    right: 15px
+    background: url(../icons/svg/arrow-slider-left.svg) 0 0 / 60% no-repeat
+
+.section-clients-slider-down .slick-arrow.slick-next
+  right: 30%
+  @include respond(mobile-portrait)
+    right: 18%
+  &::before
+    content: ""
+    position: absolute
+    width: 9px
+    height: 15px
+    top: 15px
+    right: 14px
+    background: url(../icons/svg/arrow-slider-right.svg) 0 0 / 60% no-repeat
+    
+.section-clients-slider-down .slick-dots
+  display: flex
+  justify-content: center
+  padding-top: 80px
+
+.slick-dots li
+  list-style: none
+  width: 8px
+  height: 8px
+  background: #E1E1E1
+  border-radius: 500px
+  margin: 0px 6px
+
+.section-clients-slider-down .slick-dots li.slick-active
+  background: #FFC700
+
+.section-clients-slider-down .slick-dots li button
+    font-size: 0
+    display: none
+
+
+// Слайдер секции Наши лошади
+.section-horse-slider
+  position: relative
+  
+.section-horse-slider .slick-arrow
+  position: absolute
+  top: 95.5%
+  z-index: 10
+  font-size: 0
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background: linear-gradient(180deg, #FFF383 0%, #FFC700 100%)
+  border: none
+  &:hover
+      background: linear-gradient(180deg, #FFE456 0%, #FFB800 100%)   
+      cursor: pointer
+  &:active
+      background: linear-gradient(180deg, #FFB800 0%, #FFE456 100%)
+
+.section-horse-slider .slick-arrow.slick-prev
+  left: 30%
+  @include respond(mobile-portrait)
+    left: 18%
+  &::before
+    content: ""
+    position: absolute
+    width: 9px
+    height: 15px
+    top: 15px
+    right: 15px
+    background: url(../icons/svg/arrow-slider-left.svg) 0 0 / 60% no-repeat
+
+.section-horse-slider .slick-arrow.slick-next
+  right: 30%
+  @include respond(mobile-portrait)
+    right: 18%
+  &::before
+    content: ""
+    position: absolute
+    width: 9px
+    height: 15px
+    top: 15px
+    right: 15px
+    background: url(../icons/svg/arrow-slider-right.svg) 0 0 / 60% no-repeat
+
+.section-horse-slider .slick-dots
+  display: flex
+  justify-content: center
+  padding-top: 80px
+
+.section-horse-slider .slick-dots li.slick-active
+  background: #FFC700
+
+.section-horse-slider .slick-dots li button
+    font-size: 0
+    display: none
+
+.section-feedback-slider
+  position: relative
+  
+.section-feedback-slider .slick-arrow
+  position: absolute
+  top: 93.5%
+  z-index: 10
+  font-size: 0
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background: linear-gradient(180deg, #FFF383 0%, #FFC700 100%)
+  border: none
+  &:hover
+      background: linear-gradient(180deg, #FFE456 0%, #FFB800 100%)   
+      cursor: pointer
+  &:active
+      background: linear-gradient(180deg, #FFB800 0%, #FFE456 100%)
+
+.section-feedback-slider .slick-arrow.slick-prev
+  left: 32%
+  @include respond(mobile-portrait)
+    left: 18%
+  &::before
+    content: ""
+    position: absolute
+    width: 9px
+    height: 15px
+    top: 15px
+    right: 14px
+    background: url(../icons/svg/arrow-slider-left.svg) 0 0 / 60% no-repeat
+
+.section-feedback-slider .slick-arrow.slick-next
+  right: 32%
+  @include respond(mobile-portrait)
+    right: 18%
+  &::before
+    content: ""
+    position: absolute
+    width: 9px
+    height: 15px
+    top: 15px
+    right: 14px
+    background: url(../icons/svg/arrow-slider-right.svg) 0 0 / 60% no-repeat
+
+.section-feedback-slider .slick-dots
+  display: flex
+  justify-content: center
+  padding-top: 80px
+
+.section-feedback-slider .slick-dots li.slick-active
+  background: #FFC700
+
+.section-feedback-slider .slick-dots li button
+    font-size: 0
+    display: none
