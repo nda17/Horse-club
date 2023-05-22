@@ -1,2 +1,3 @@
-# Horse_Club
+#«Horse club Landing-page»
+
 ## Development files
