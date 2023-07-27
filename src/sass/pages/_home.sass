@@ -31,6 +31,12 @@
     @include respond(mobile-portrait)
         margin: 0px 0px 70px 0px
 
+.section-horse
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-bottom: 100px
+
 .section-directions
     display: flex
     justify-content: space-between
@@ -137,6 +143,21 @@
     @include respond(mobile-portrait)
         margin-bottom: 70px
 
+.section-feedback-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.section-clients
+    max-width: 1603px
+    flex-wrap: wrap
+    display: flex
+    justify-content: center
+    margin: 0 auto 67px auto
+    @include respond(mobile-portrait)
+        margin: 0 6px
+        overflow: hidden
+
 .section-features
     display: flex
     flex-wrap: wrap
@@ -152,36 +173,6 @@
     @include respond(mobile-portrait)
         margin: 0px 0px 50px 0px
         justify-content: center
-
-.section-clients-slider-top
-  position: relative
-  &__item
-    text-align: center
-    position: relative
-  &__photo
-    border-radius: 5px
-
-.section-clients-slider-down
-    position: relative
-    margin: 0px 0px 150px 0px
-    @include respond(tablet-landscape)
-        margin: 0px 0px 120px 0px
-    @include respond(tablet-portrait)
-        margin: 0px 0px 90px 0px
-    @include respond(mobile-landscape)
-        margin: 0px 0px 90px 0px
-        justify-content: center
-    @include respond(mobile-portrait)
-        margin: 0px 0px 90px 0px
-        justify-content: center
-    &__item
-        text-align: center
-    &__photo
-        border-radius: 5px
-
-.section-horse-slider
-    position: relative
-    margin: 0px 0px 150px 0px
 
 .section-adress-map
     position: relative
