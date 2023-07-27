@@ -1,5 +1,5 @@
 # «Horse club Landing-page»
 
-Adaptive and mobile layout
+Adaptive and mobile layout.
 
-## [Demo](https://nfdmitry.github.io/Horse-club/)
+## [Demo](https://nda17.github.io/Horse-club)
